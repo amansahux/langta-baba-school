@@ -115,7 +115,7 @@ export default function Navbar() {
                   href={href}
                   className={`
                     px-3 py-1.5 rounded-full text-xs xl:text-sm font-[family-name:var(--font-display)] font-semibold
-                    transition-all duration-150
+                    transition-all duration-150 whitespace-nowrap
                     ${
                       isActive
                         ? "text-[#17265B] bg-[#17265B]/10 font-bold"
@@ -138,7 +138,7 @@ export default function Navbar() {
                 hidden sm:inline-flex items-center justify-center gap-1.5
                 px-5 py-2.5 bg-[#F6CF45] hover:bg-amber-400
                 text-[#17265B] font-[family-name:var(--font-display)] text-xs sm:text-sm font-bold
-                rounded-full shadow-sm hover:shadow-md transition-all duration-150 hover:-translate-y-0.5
+                rounded-full shadow-sm hover:shadow-md transition-all duration-150 hover:-translate-y-0.5 whitespace-nowrap
               "
             >
               <span>Contact Us</span>
