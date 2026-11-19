@@ -1,159 +1,130 @@
 import Image from "next/image";
 import Link from "next/link";
 
-const quickLinks = [
-  { label: "Home", href: "#home" },
-  { label: "About", href: "#about" },
-  { label: "Why Us", href: "#why-us" },
-  { label: "Academics", href: "#academics" },
-  { label: "Teachers", href: "#teachers" },
-  { label: "Facilities", href: "#facilities" },
-  { label: "Gallery", href: "#gallery" },
-  { label: "Contact", href: "#contact" },
+const QUICK_LINKS = [
+  { label: "Home", href: "#hero" },
+  { label: "About Our School", href: "#about" },
+  { label: "Why Choose Us", href: "#why-choose-us" },
+  { label: "Academic Programs", href: "#academics" },
+  { label: "Our Teachers", href: "#teachers" },
+  { label: "School Facilities", href: "#facilities" },
+  { label: "School Gallery", href: "#gallery" },
+  { label: "Parent Testimonials", href: "#testimonials" },
+  { label: "Contact the Principal", href: "#contact" },
 ];
 
 export default function Footer() {
   return (
-    <footer className="bg-[#17265B] text-white">
-      {/* ── Main Grid ───────────────────────────────────────────────── */}
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-14 md:py-20">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12 lg:gap-16">
-
-          {/* ── Column 1 — Brand ──────────────────────────────────────── */}
-          <div className="space-y-5">
-            <Link href="#home" className="inline-flex items-center gap-3 group">
+    <footer className="bg-[#17265B] text-white pt-20 pb-12 border-t border-[#17265B]">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        {/* ── Top Columns ── */}
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-12 pb-16 border-b border-white/10">
+          {/* Left: Logo & Identity (Span 5) */}
+          <div className="lg:col-span-5 space-y-4">
+            <div className="flex items-center gap-4">
               <Image
                 src="https://lh3.googleusercontent.com/aida/ALJJyrAbcAUAOUALevncLwfAkVYx0P90Ns19_1y8whRgZpdqqRZ3FRRrT015YK8U6an0OMcQSDw-vaFwMVv04H5W1SrBjg-fpphs3C3568i1SYWjM3Ii6Tyl1_EwyBo2qyabcFCRqDbwavokkxTVG9GX8L_QIno7GQLTHuUBmfctZGZrMaA1hUakQiEovsPQbe9ZomHkrRChh2KLFSMJUddZNDvsEVh1x2ntU-CcSHtE748d6VXekJFVZs-PGHq5mgtjka1KRrq5"
-                alt="Langta Baba Gyandeep Public School Logo"
-                width={52}
-                height={52}
-                className="rounded-full ring-2 ring-[#F6CF45]/50 group-hover:ring-[#F6CF45] transition-all duration-200 flex-shrink-0"
+                alt="Langta Baba Gyandeep Public School Emblem"
+                width={64}
+                height={64}
+                className="w-16 h-16 object-contain rounded-full bg-white p-1"
               />
               <div>
-                <p className="font-[family-name:var(--font-display)] font-800 text-base leading-tight text-white">
-                  Langta Baba
-                </p>
-                <p className="font-[family-name:var(--font-display)] font-800 text-base leading-tight text-[#F6CF45]">
-                  Gyandeep Public School
+                <h3 className="font-[family-name:var(--font-display)] font-bold text-lg sm:text-xl text-white leading-tight">
+                  Langta Baba Gyandeep Public School
+                </h3>
+                <p className="text-[#F6CF45] text-xs font-semibold tracking-wide">
+                  Kharagdih • Established 2013
                 </p>
               </div>
-            </Link>
-
-            <p className="font-[family-name:var(--font-body)] text-sm text-white/70 leading-relaxed max-w-xs">
-              Building Knowledge, Character &amp; A Brighter Future. Nurturing
-              young minds from Class 1 to 10 with dedicated teachers, strong
-              values, and affordable quality education since 2013.
+            </div>
+            <p className="font-[family-name:var(--font-body)] text-sm text-white/80 leading-relaxed max-w-sm">
+              Nurturing knowledge, integrity, and lifelong learning for students from Classes 1 to 10 in Kharagdih. Dedicated to wholesome character and community development.
             </p>
-
-            {/* Social / Accent chips */}
-            <div className="flex items-center gap-2 pt-1">
-              <span className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-white/10 text-xs font-[family-name:var(--font-body)] text-white/80">
-                <span className="material-symbols-outlined !text-[14px] text-[#F6CF45]">school</span>
-                Est. 2013
+            <div className="pt-2 flex items-center gap-2 text-xs text-white/70">
+              <span className="material-symbols-outlined text-[#F6CF45] !text-[18px]">
+                verified
               </span>
-              <span className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-white/10 text-xs font-[family-name:var(--font-body)] text-white/80">
-                <span className="material-symbols-outlined !text-[14px] text-[#F6CF45]">grade</span>
-                Class 1–10
-              </span>
+              <span>Recognized Community Educational Institution</span>
             </div>
           </div>
 
-          {/* ── Column 2 — Quick Links ───────────────────────────────── */}
-          <div>
-            <h3 className="font-[family-name:var(--font-display)] font-bold text-sm tracking-widest uppercase text-[#F6CF45] mb-6">
+          {/* Center: Quick Navigation (Span 3) */}
+          <div className="lg:col-span-3 space-y-3">
+            <h4 className="font-[family-name:var(--font-display)] font-bold text-white text-base tracking-wider uppercase">
               Quick Links
-            </h3>
-            <ul className="space-y-3">
-              {quickLinks.map(({ label, href }) => (
+            </h4>
+            <ul className="space-y-2.5 text-sm text-white/80 font-[family-name:var(--font-body)]">
+              {QUICK_LINKS.map(({ label, href }) => (
                 <li key={href}>
                   <a
                     href={href}
-                    className="
-                      group inline-flex items-center gap-2
-                      font-[family-name:var(--font-body)] text-sm text-white/70
-                      hover:text-white transition-colors duration-200
-                    "
+                    className="hover:text-[#F6CF45] transition-colors flex items-center gap-1.5"
                   >
-                    <span
-                      className="
-                        w-1.5 h-1.5 rounded-full bg-[#F6CF45]/40
-                        group-hover:bg-[#F6CF45] transition-colors duration-200
-                        flex-shrink-0
-                      "
-                    />
-                    {label}
+                    <span className="material-symbols-outlined !text-[14px] text-[#F6CF45]">
+                      chevron_right
+                    </span>
+                    <span>{label}</span>
                   </a>
                 </li>
               ))}
             </ul>
           </div>
 
-          {/* ── Column 3 — Contact Info ──────────────────────────────── */}
-          <div>
-            <h3 className="font-[family-name:var(--font-display)] font-bold text-sm tracking-widest uppercase text-[#F6CF45] mb-6">
-              Contact Us
-            </h3>
-            <ul className="space-y-4">
-              <li className="flex gap-3">
-                <span className="material-symbols-outlined !text-[20px] text-[#F6CF45] mt-0.5 flex-shrink-0">
+          {/* Right: Contact Details (Span 4) */}
+          <div className="lg:col-span-4 space-y-3">
+            <h4 className="font-[family-name:var(--font-display)] font-bold text-white text-base tracking-wider uppercase">
+              Get in Touch
+            </h4>
+            <ul className="space-y-3 text-sm text-white/80 font-[family-name:var(--font-body)]">
+              <li className="flex items-start gap-2.5">
+                <span className="material-symbols-outlined text-[#F6CF45] !text-[20px] shrink-0 mt-0.5">
                   location_on
                 </span>
-                <span className="font-[family-name:var(--font-body)] text-sm text-white/70 leading-relaxed">
-                  Langta Baba Gyandeep Public School,
-                  <br />
-                  Kharagdih, Jharkhand, India
-                </span>
+                <span>Kharagdih, Giridih District, Jharkhand, India</span>
               </li>
-
-              <li className="flex gap-3 items-center">
-                <span className="material-symbols-outlined !text-[20px] text-[#F6CF45] flex-shrink-0">
+              <li className="flex items-center gap-2.5">
+                <span className="material-symbols-outlined text-[#F6CF45] !text-[20px] shrink-0">
                   call
                 </span>
-                <a
-                  href="tel:+91XXXXXXXXXX"
-                  className="font-[family-name:var(--font-body)] text-sm text-white/70 hover:text-white transition-colors duration-200"
-                >
-                  +91 XXXXX XXXXX
-                </a>
+                <span>+91 [School Contact Number Placeholder]</span>
               </li>
-
-              <li className="flex gap-3 items-center">
-                <span className="material-symbols-outlined !text-[20px] text-[#F6CF45] flex-shrink-0">
+              <li className="flex items-center gap-2.5">
+                <span className="material-symbols-outlined text-[#F6CF45] !text-[20px] shrink-0">
                   mail
                 </span>
                 <a
-                  href="mailto:info@langtababaschool.in"
-                  className="font-[family-name:var(--font-body)] text-sm text-white/70 hover:text-white transition-colors duration-200 break-all"
+                  href="mailto:contact@langtababa-gyandeep.org"
+                  className="hover:text-[#F6CF45] transition-colors break-all"
                 >
-                  info@langtababaschool.in
+                  contact@langtababa-gyandeep.org
                 </a>
               </li>
-
-              <li className="flex gap-3 items-center">
-                <span className="material-symbols-outlined !text-[20px] text-[#F6CF45] flex-shrink-0">
+              <li className="flex items-center gap-2.5">
+                <span className="material-symbols-outlined text-[#F6CF45] !text-[20px] shrink-0">
                   schedule
                 </span>
-                <span className="font-[family-name:var(--font-body)] text-sm text-white/70">
-                  Mon – Sat: 8:00 AM – 4:00 PM
-                </span>
+                <span>Mon – Sat: 08:00 AM – 02:30 PM</span>
               </li>
             </ul>
           </div>
         </div>
-      </div>
 
-      {/* ── Divider ─────────────────────────────────────────────────── */}
-      <div className="border-t border-white/10" />
-
-      {/* ── Bottom Bar ──────────────────────────────────────────────── */}
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-5">
-        <div className="flex flex-col sm:flex-row items-center justify-between gap-3">
-          <p className="font-[family-name:var(--font-body)] text-xs text-white/50 text-center sm:text-left">
-            © 2025 Langta Baba Gyandeep Public School. All rights reserved.
-          </p>
-          <p className="font-[family-name:var(--font-body)] text-xs text-white/40">
-            Kharagdih, Jharkhand &nbsp;|&nbsp; Est. 2013
-          </p>
+        {/* ── Bottom Bar with Back to Top ── */}
+        <div className="pt-8 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-white/70 font-[family-name:var(--font-body)]">
+          <div>
+            © 2013–2026 <span className="text-white font-medium">Langta Baba Gyandeep Public School</span>. All rights reserved.
+          </div>
+          <div className="flex items-center gap-4">
+            <span>Kharagdih • Classes 1–10</span>
+            <Link
+              href="#hero"
+              className="inline-flex items-center gap-1.5 px-3.5 py-1.5 rounded-full bg-white/10 hover:bg-[#F6CF45] hover:text-[#17265B] text-white text-xs font-bold transition-all"
+            >
+              <span>Back to top</span>
+              <span className="material-symbols-outlined !text-[16px]">arrow_upward</span>
+            </Link>
+          </div>
         </div>
       </div>
     </footer>

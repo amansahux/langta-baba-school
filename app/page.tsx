@@ -1,11 +1,8 @@
 import { Suspense } from "react";
-import dynamic from "next/dynamic";
-
-// Server Components — imported directly (SSG)
 import Navbar from "./_components/layout/Navbar";
 import HeroSection from "./_components/sections/HeroSection";
 import AboutSection from "./_components/sections/AboutSection";
-import WhyChooseUsSection from "./_components/sections/WhyChooseUsSection";
+import WhyChooseUs from "./_components/sections/WhyChooseUs";
 import StatsMarquee from "./_components/sections/StatsMarquee";
 import AcademicsSection from "./_components/sections/AcademicsSection";
 import TeachersSection from "./_components/sections/TeachersSection";
@@ -14,82 +11,84 @@ import GallerySection from "./_components/sections/GallerySection";
 import TestimonialsSection from "./_components/sections/TestimonialsSection";
 import ContactSection from "./_components/sections/ContactSection";
 import Footer from "./_components/layout/Footer";
+import ScrollToTop from "./_components/ui/ScrollToTop";
+import SkeletonCard from "./_components/ui/SkeletonCard";
 
-// "use client" — dynamically loaded (reduces initial JS bundle)
-const ScrollToTop = dynamic(() => import("./_components/ui/ScrollToTop"), {
-  ssr: false,
-});
-
-// ─── Page (Server Component — SSG) ─────────────────────────────────────────
+// ─── Home Page (Server Component — SSG) ────────────────────────────────────
 export default function HomePage() {
   return (
     <>
+      {/* Sticky Navigation Header */}
       <Navbar />
+
       <main id="main-content">
-        {/* Hero — highest priority, LCP element */}
+        {/* 1. Hero — LCP image priority */}
         <HeroSection />
 
-        {/* About */}
+        {/* 2. About Our School */}
         <Suspense fallback={<SectionSkeleton />}>
           <AboutSection />
         </Suspense>
 
-        {/* Why Choose Us */}
+        {/* 3. Why Choose Us (12-column Bento Grid) */}
         <Suspense fallback={<SectionSkeleton />}>
-          <WhyChooseUsSection />
+          <WhyChooseUs />
         </Suspense>
 
-        {/* Stats Ticker */}
+        {/* 4. Stats Marquee Ticker ("use client") */}
         <StatsMarquee />
 
-        {/* Academics */}
+        {/* 5. Academic Programs */}
         <Suspense fallback={<SectionSkeleton />}>
           <AcademicsSection />
         </Suspense>
 
-        {/* Teachers */}
+        {/* 6. Our Teachers */}
         <Suspense fallback={<SectionSkeleton />}>
           <TeachersSection />
         </Suspense>
 
-        {/* Facilities */}
+        {/* 7. School Facilities */}
         <Suspense fallback={<SectionSkeleton />}>
           <FacilitiesSection />
         </Suspense>
 
-        {/* Gallery */}
+        {/* 8. School Gallery */}
         <Suspense fallback={<SectionSkeleton />}>
           <GallerySection />
         </Suspense>
 
-        {/* Testimonials */}
+        {/* 9. Parent & Student Testimonials */}
         <Suspense fallback={<SectionSkeleton />}>
           <TestimonialsSection />
         </Suspense>
 
-        {/* Contact */}
+        {/* 10. Contact Section */}
         <Suspense fallback={<SectionSkeleton />}>
           <ContactSection />
         </Suspense>
       </main>
 
+      {/* Footer */}
       <Footer />
+
+      {/* Floating Scroll-to-Top Button ("use client") */}
       <ScrollToTop />
     </>
   );
 }
 
-// ─── Fallback skeleton for Suspense boundaries ─────────────────────────────
+// ─── Fallback Skeleton for Suspense Boundaries ─────────────────────────────
 function SectionSkeleton() {
   return (
-    <section className="py-24 px-4">
+    <section className="py-24 px-4 sm:px-6 lg:px-8">
       <div className="max-w-7xl mx-auto">
         <div className="skeleton h-6 w-32 mb-4 rounded-full" />
-        <div className="skeleton h-10 w-2/3 mb-8" />
+        <div className="skeleton h-10 w-2/3 max-w-md mb-8 rounded-lg" />
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-          {[1, 2, 3].map((i) => (
-            <div key={i} className="skeleton h-48 rounded-2xl" />
-          ))}
+          <SkeletonCard />
+          <SkeletonCard />
+          <SkeletonCard />
         </div>
       </div>
     </section>
