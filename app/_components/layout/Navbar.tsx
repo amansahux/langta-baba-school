@@ -41,7 +41,7 @@ export default function Navbar() {
         ([entry]) => {
           if (entry.isIntersecting) setActiveHash(`#${id}`);
         },
-        { rootMargin: "-30% 0px -60% 0px" }
+        { rootMargin: "-30% 0px -60% 0px" },
       );
       obs.observe(el);
       observers.push(obs);
@@ -97,7 +97,7 @@ export default function Navbar() {
                 Langta Baba Gyandeep Public School
               </span>
               <span className="font-[family-name:var(--font-body)] text-[#4D515C] text-xs font-medium tracking-wide">
-                Kharagdih | Est. 2013 • Classes 1–10
+                Kharagdiha | Est. 2013 • Classes 1–10
               </span>
             </div>
           </a>
@@ -142,7 +142,9 @@ export default function Navbar() {
               "
             >
               <span>Contact Us</span>
-              <span className="material-symbols-outlined !text-[16px]">arrow_forward</span>
+              <span className="material-symbols-outlined !text-[16px]">
+                arrow_forward
+              </span>
             </a>
 
             {/* Hamburger — mobile only */}
@@ -226,7 +228,9 @@ export default function Navbar() {
               "
             >
               <span>Contact Us Today</span>
-              <span className="material-symbols-outlined !text-[18px]">arrow_forward</span>
+              <span className="material-symbols-outlined !text-[18px]">
+                arrow_forward
+              </span>
             </a>
           </div>
         </nav>

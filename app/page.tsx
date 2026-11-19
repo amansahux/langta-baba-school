@@ -8,7 +8,6 @@ import AcademicsSection from "./_components/sections/AcademicsSection";
 import TeachersSection from "./_components/sections/TeachersSection";
 import FacilitiesSection from "./_components/sections/FacilitiesSection";
 import GallerySection from "./_components/sections/GallerySection";
-import TestimonialsSection from "./_components/sections/TestimonialsSection";
 import ContactSection from "./_components/sections/ContactSection";
 import Footer from "./_components/layout/Footer";
 import ScrollToTop from "./_components/ui/ScrollToTop";
@@ -58,12 +57,7 @@ export default function HomePage() {
           <GallerySection />
         </Suspense>
 
-        {/* 9. Parent & Student Testimonials */}
-        <Suspense fallback={<SectionSkeleton />}>
-          <TestimonialsSection />
-        </Suspense>
-
-        {/* 10. Contact Section */}
+        {/* 9. Contact Section */}
         <Suspense fallback={<SectionSkeleton />}>
           <ContactSection />
         </Suspense>

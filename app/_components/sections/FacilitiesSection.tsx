@@ -3,7 +3,10 @@ import SectionLabel from "../ui/SectionLabel";
 
 export default function FacilitiesSection() {
   return (
-    <section id="facilities" className="py-24 bg-white border-y border-[#E2DFC8]">
+    <section
+      id="facilities"
+      className="py-24 bg-white border-y border-[#E2DFC8]"
+    >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* ── Section Header ── */}
         <div className="max-w-2xl mb-14">
@@ -14,7 +17,9 @@ export default function FacilitiesSection() {
             Spaces That Support Better Learning.
           </h2>
           <p className="font-[family-name:var(--font-body)] text-base text-[#4D515C] text-pretty">
-            Essential campus facilities providing students with clean, supportive, and stimulating spaces to study, explore, and stay healthy.
+            Essential campus facilities providing students with clean,
+            supportive, and stimulating spaces to study, explore, and stay
+            healthy.
           </p>
         </div>
 
@@ -43,7 +48,9 @@ export default function FacilitiesSection() {
             </div>
             <div className="p-6">
               <p className="font-[family-name:var(--font-body)] text-sm sm:text-base text-[#252A35] leading-relaxed">
-                Bright, well-ventilated, and organized classrooms equipped with student desks and supportive instructional boards to ensure focused learning every school day.
+                Bright, well-ventilated, and organized classrooms equipped with
+                student desks and supportive instructional boards to ensure
+                focused learning every school day.
               </p>
             </div>
           </div>
@@ -71,7 +78,8 @@ export default function FacilitiesSection() {
             </div>
             <div className="p-6">
               <p className="font-[family-name:var(--font-body)] text-sm text-[#4D515C] leading-relaxed">
-                Equipped computer terminals providing essential digital awareness, keyboard skills, and computer application training.
+                Equipped computer terminals providing essential digital
+                awareness, keyboard skills, and computer application training.
               </p>
             </div>
           </div>
@@ -96,7 +104,8 @@ export default function FacilitiesSection() {
             </div>
             <div className="p-5">
               <p className="font-[family-name:var(--font-body)] text-sm text-[#4D515C] leading-relaxed">
-                Curated collection of academic textbooks, reference materials, children&apos;s storybooks, and quiet reading tables.
+                Curated collection of academic textbooks, reference materials,
+                children&apos;s storybooks, and quiet reading tables.
               </p>
             </div>
           </div>
@@ -121,7 +130,8 @@ export default function FacilitiesSection() {
             </div>
             <div className="p-5">
               <p className="font-[family-name:var(--font-body)] text-sm text-[#4D515C] leading-relaxed">
-                Practical apparatus, charts, and demonstration kits for science experiments aligned with curriculum requirements.
+                Practical apparatus, charts, and demonstration kits for science
+                experiments aligned with curriculum requirements.
               </p>
             </div>
           </div>
@@ -146,7 +156,8 @@ export default function FacilitiesSection() {
             </div>
             <div className="p-5">
               <p className="font-[family-name:var(--font-body)] text-sm text-[#4D515C] leading-relaxed">
-                Open outdoor ground for physical education, morning assembly, sports drills, and joyful lunchtime recreation.
+                Open outdoor ground for physical education, morning assembly,
+                sports drills, and joyful lunchtime recreation.
               </p>
             </div>
           </div>
@@ -154,7 +165,10 @@ export default function FacilitiesSection() {
           {/* 6 & 7. Information Panels: Clean Drinking Water & Transportation (Span 6 each) */}
           <div className="lg:col-span-6 bg-white rounded-3xl p-6 border border-[#E2DFC8] custom-shadow-card flex items-start gap-4">
             <div className="w-12 h-12 rounded-2xl bg-sky-100 text-sky-800 flex items-center justify-center shrink-0">
-              <span className="material-symbols-outlined text-2xl" aria-hidden="true">
+              <span
+                className="material-symbols-outlined text-2xl"
+                aria-hidden="true"
+              >
                 water_drop
               </span>
             </div>
@@ -163,14 +177,18 @@ export default function FacilitiesSection() {
                 Clean Drinking Water
               </h3>
               <p className="font-[family-name:var(--font-body)] text-sm text-[#4D515C] leading-relaxed">
-                Filtered and hygienic potable drinking water stations situated across campus for students and staff safety.
+                Filtered and hygienic potable drinking water stations situated
+                across campus for students and staff safety.
               </p>
             </div>
           </div>
 
           <div className="lg:col-span-6 bg-white rounded-3xl p-6 border border-[#E2DFC8] custom-shadow-card flex items-start gap-4">
             <div className="w-12 h-12 rounded-2xl bg-amber-100 text-amber-800 flex items-center justify-center shrink-0">
-              <span className="material-symbols-outlined text-2xl" aria-hidden="true">
+              <span
+                className="material-symbols-outlined text-2xl"
+                aria-hidden="true"
+              >
                 directions_bus
               </span>
             </div>
@@ -179,7 +197,8 @@ export default function FacilitiesSection() {
                 Transportation Assistance
               </h3>
               <p className="font-[family-name:var(--font-body)] text-sm text-[#4D515C] leading-relaxed">
-                Coordinated local transportation assistance ensuring safe commute for students from nearby Kharagdih settlements.
+                Coordinated local transportation assistance ensuring safe
+                commute for students from nearby Kharagdiha settlements.
               </p>
             </div>
           </div>

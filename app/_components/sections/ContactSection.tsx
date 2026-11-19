@@ -3,7 +3,10 @@ import ContactForm from "./ContactForm";
 
 export default function ContactSection() {
   return (
-    <section id="contact" className="py-24 bg-white relative border-t border-[#E2DFC8]">
+    <section
+      id="contact"
+      className="py-24 bg-white relative border-t border-[#E2DFC8]"
+    >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* ── Section Header ── */}
         <div className="max-w-2xl mb-16">
@@ -14,7 +17,8 @@ export default function ContactSection() {
             Have a Question? Let&apos;s Talk.
           </h2>
           <p className="font-[family-name:var(--font-body)] text-base sm:text-lg text-[#4D515C] leading-relaxed text-pretty">
-            For information about our school, academic programs, or any other queries, feel free to contact our school administration.
+            For information about our school, academic programs, or any other
+            queries, feel free to contact our school administration.
           </p>
         </div>
 
@@ -26,7 +30,10 @@ export default function ContactSection() {
               {/* School Address */}
               <div className="flex items-start gap-4 p-5 rounded-2xl bg-[#F8F6EF] border border-[#E2DFC8]">
                 <div className="w-12 h-12 rounded-xl bg-[#F6CF45] text-[#17265B] flex items-center justify-center shrink-0">
-                  <span className="material-symbols-outlined text-2xl" aria-hidden="true">
+                  <span
+                    className="material-symbols-outlined text-2xl"
+                    aria-hidden="true"
+                  >
                     location_on
                   </span>
                 </div>
@@ -35,7 +42,8 @@ export default function ContactSection() {
                     School Address
                   </h3>
                   <p className="font-[family-name:var(--font-body)] text-sm text-[#4D515C] mt-1 leading-relaxed">
-                    Langta Baba Gyandeep Public School, Kharagdih, Giridih District, Jharkhand, India
+                    Langta Baba Gyandeep Public School, Kharagdiha, Giridih
+                    District, Jharkhand, India
                   </p>
                 </div>
               </div>
@@ -43,7 +51,10 @@ export default function ContactSection() {
               {/* Phone Number */}
               <div className="flex items-start gap-4 p-5 rounded-2xl bg-[#F8F6EF] border border-[#E2DFC8]">
                 <div className="w-12 h-12 rounded-xl bg-[#17265B] text-white flex items-center justify-center shrink-0">
-                  <span className="material-symbols-outlined text-2xl" aria-hidden="true">
+                  <span
+                    className="material-symbols-outlined text-2xl"
+                    aria-hidden="true"
+                  >
                     call
                   </span>
                 </div>
@@ -59,7 +70,9 @@ export default function ContactSection() {
                     className="inline-flex items-center gap-1 text-xs font-bold text-[#17265B] hover:text-[#862D48] mt-2 transition-colors"
                   >
                     <span>Call Administration</span>
-                    <span className="material-symbols-outlined !text-[16px]">arrow_forward</span>
+                    <span className="material-symbols-outlined !text-[16px]">
+                      arrow_forward
+                    </span>
                   </a>
                 </div>
               </div>
@@ -67,7 +80,10 @@ export default function ContactSection() {
               {/* Email */}
               <div className="flex items-start gap-4 p-5 rounded-2xl bg-[#F8F6EF] border border-[#E2DFC8]">
                 <div className="w-12 h-12 rounded-xl bg-[#862D48] text-white flex items-center justify-center shrink-0">
-                  <span className="material-symbols-outlined text-2xl" aria-hidden="true">
+                  <span
+                    className="material-symbols-outlined text-2xl"
+                    aria-hidden="true"
+                  >
                     mail
                   </span>
                 </div>
@@ -87,7 +103,10 @@ export default function ContactSection() {
               {/* Opening Hours */}
               <div className="flex items-start gap-4 p-5 rounded-2xl bg-[#F8F6EF] border border-[#E2DFC8]">
                 <div className="w-12 h-12 rounded-xl bg-white border border-[#17265B]/20 text-[#17265B] flex items-center justify-center shrink-0">
-                  <span className="material-symbols-outlined text-2xl" aria-hidden="true">
+                  <span
+                    className="material-symbols-outlined text-2xl"
+                    aria-hidden="true"
+                  >
                     schedule
                   </span>
                 </div>
@@ -106,15 +125,17 @@ export default function ContactSection() {
             <div className="rounded-3xl overflow-hidden border border-[#E2DFC8] custom-shadow-card">
               <div className="p-3 bg-[#F8F6EF] border-b border-[#E2DFC8] flex items-center justify-between text-[#17265B]">
                 <span className="font-[family-name:var(--font-display)] text-xs font-bold flex items-center gap-1.5">
-                  <span className="material-symbols-outlined !text-[16px]">map</span>
-                  Kharagdih Campus Location
+                  <span className="material-symbols-outlined !text-[16px]">
+                    map
+                  </span>
+                  Kharagdiha Campus Location
                 </span>
                 <span className="text-xs text-[#4D515C]">Interactive Map</span>
               </div>
               <div className="w-full h-56 bg-slate-100">
                 <iframe
                   title="Langta Baba Gyandeep Public School Map"
-                  src="https://maps.google.com/maps?q=Kharagdih&t=&z=13&ie=UTF8&iwloc=&output=embed"
+                  src="https://maps.google.com/maps?q=Kharagdiha&t=&z=13&ie=UTF8&iwloc=&output=embed"
                   width="100%"
                   height="100%"
                   className="border-0 w-full h-full"

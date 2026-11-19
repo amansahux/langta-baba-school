@@ -37,7 +37,6 @@ export default function HeroSection() {
       {/* ── Content ── */}
       <div className="relative z-10 w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="max-w-3xl">
-
           {/* Eyebrow Badge */}
           <div className="inline-flex items-center gap-2.5 bg-white/90 backdrop-blur-sm border border-[#E2DFC8] rounded-full px-4 py-2 mb-7 shadow-sm">
             <span className="relative flex h-2.5 w-2.5 flex-shrink-0">
@@ -52,14 +51,14 @@ export default function HeroSection() {
           {/* H1 */}
           <h1 className="font-[family-name:var(--font-display)] font-extrabold text-[#17265B] text-[32px] leading-[1.15] sm:text-[42px] lg:text-[56px] lg:leading-[1.1] mb-6">
             Building Knowledge,{" "}
-            <span className="highlight-yellow">Character</span>
-            {" "}& A Brighter Future.
+            <span className="highlight-yellow">Character</span> & A Brighter
+            Future.
           </h1>
 
           {/* Description */}
           <p className="font-[family-name:var(--font-body)] text-[#4D515C] text-base sm:text-lg leading-relaxed mb-9 max-w-2xl">
             Nurturing young minds from Class&nbsp;1 to Class&nbsp;10 in the
-            heart of Kharagdih — with dedicated teachers, strong values, and
+            heart of Kharagdiha — with dedicated teachers, strong values, and
             affordable quality education that every family deserves.
           </p>
 
@@ -130,7 +129,7 @@ export default function HeroSection() {
               </span>
               <div>
                 <p className="font-[family-name:var(--font-display)] font-bold text-sm text-[#17265B] leading-tight">
-                  Kharagdih
+                  Kharagdiha
                 </p>
                 <p className="font-[family-name:var(--font-body)] text-xs text-[#4D515C] leading-tight mt-0.5">
                   Location

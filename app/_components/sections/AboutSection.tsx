@@ -9,7 +9,6 @@ export default function AboutSection() {
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-center">
-
           {/* ── Left Column: Photo Composition ── */}
           <div className="lg:col-span-6 relative">
             {/* EST. 2013 Badge */}
@@ -55,12 +54,12 @@ export default function AboutSection() {
 
             <p className="font-[family-name:var(--font-body)] text-[#4D515C] text-base leading-relaxed mb-8">
               Langta Baba Gyandeep Public School has been a cornerstone of
-              education in Kharagdih since 2013. We believe every child
-              deserves access to quality learning — a space where curiosity
-              is celebrated, character is built, and potential is fully
-              realised. Our teachers are more than educators; they are
-              mentors who guide students from Class&nbsp;1 through
-              Class&nbsp;10 with patience, dedication, and care.
+              education in Kharagdiha since 2013. We believe every child
+              deserves access to quality learning — a space where curiosity is
+              celebrated, character is built, and potential is fully realised.
+              Our teachers are more than educators; they are mentors who guide
+              students from Class&nbsp;1 through Class&nbsp;10 with patience,
+              dedication, and care.
             </p>
 
             {/* Vision & Mission Cards */}
@@ -76,9 +75,8 @@ export default function AboutSection() {
                   Our Vision
                 </p>
                 <p className="font-[family-name:var(--font-body)] text-[#4D515C] text-sm leading-relaxed">
-                  To be a beacon of holistic education — developing
-                  confident, compassionate leaders who uplift their
-                  communities and nation.
+                  To be a beacon of holistic education — developing confident,
+                  compassionate leaders who uplift their communities and nation.
                 </p>
               </div>
 
@@ -93,9 +91,9 @@ export default function AboutSection() {
                   Our Mission
                 </p>
                 <p className="font-[family-name:var(--font-body)] text-[#4D515C] text-sm leading-relaxed">
-                  To provide affordable, value-driven education through
-                  skilled teaching, strong ethics, and a nurturing
-                  environment for every student.
+                  To provide affordable, value-driven education through skilled
+                  teaching, strong ethics, and a nurturing environment for every
+                  student.
                 </p>
               </div>
             </div>
@@ -106,14 +104,13 @@ export default function AboutSection() {
                 workspace_premium
               </span>
               <p className="font-[family-name:var(--font-body)] text-[#4D515C] text-sm leading-relaxed">
-                Proudly serving the Kharagdih community with quality,
+                Proudly serving the Kharagdiha community with quality,
                 affordable education since{" "}
-                <span className="font-semibold text-[#17265B]">2013</span>
-                {" "}— building brighter futures, one student at a time.
+                <span className="font-semibold text-[#17265B]">2013</span> —
+                building brighter futures, one student at a time.
               </p>
             </div>
           </div>
-
         </div>
       </div>
     </section>
