@@ -13,11 +13,11 @@
   --color-light-surface: #F1EEDB;
   --color-white: #FFFFFF;
 
-  /* Typography — Plus Jakarta Sans */
-  --font-display: "Plus Jakarta Sans", sans-serif;
-  --font-headline: "Plus Jakarta Sans", sans-serif;
-  --font-body: "Inter", sans-serif;
-  --font-label: "Inter", sans-serif;
+  /* Typography */
+  --font-display: var(--font-display), "Plus Jakarta Sans", sans-serif;
+  --font-headline: var(--font-display), "Plus Jakarta Sans", sans-serif;
+  --font-body: var(--font-body), "Inter", sans-serif;
+  --font-label: var(--font-body), "Inter", sans-serif;
 
   /* Border Radius */
   --radius-sm: 6px;
@@ -68,7 +68,7 @@ body {
   font-weight: normal;
   font-style: normal;
   font-size: 24px;
-  line-height: 1;
+  line-height: 1 !important;
   letter-spacing: normal;
   text-transform: none;
   display: inline-block;
@@ -86,28 +86,35 @@ body {
 /* ===== UTILITY CLASSES ===== */
 .highlight-yellow {
   background: linear-gradient(120deg, rgba(246, 207, 69, 0.45) 0%, rgba(246, 207, 69, 0.88) 100%);
-  padding: 0.08em 0.35em;
-  border-radius: 0.3rem;
+  padding: 0.1em 0.35em;
+  border-radius: 0.25rem;
   box-decoration-break: clone;
   -webkit-box-decoration-break: clone;
 }
 
+.custom-shadow-card,
 .card-shadow {
   box-shadow: 0 10px 30px -10px rgba(23, 38, 91, 0.08);
 }
 
+.custom-shadow-hover,
 .card-hover {
-  transition: box-shadow 0.25s ease, transform 0.25s ease;
+  transition: all 0.25s ease;
 }
+.custom-shadow-hover:hover,
 .card-hover:hover {
   box-shadow: 0 20px 35px -10px rgba(23, 38, 91, 0.14);
   transform: translateY(-3px);
 }
 
-/* ===== MARQUEE ANIMATION ===== */
+/* ===== INFINITE MARQUEE ANIMATION ===== */
 @keyframes marquee-scroll {
-  from { transform: translateX(0); }
-  to   { transform: translateX(-50%); }
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
 }
 
 .marquee-track {
@@ -119,22 +126,6 @@ body {
 
 .marquee-container:hover .marquee-track {
   animation-play-state: paused;
-}
-
-/* ===== FADE-IN ANIMATION ===== */
-@keyframes fade-up {
-  from {
-    opacity: 0;
-    transform: translateY(24px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-
-.animate-fade-up {
-  animation: fade-up 0.6s var(--ease-enter) both;
 }
 
 /* ===== SKELETON LOADING ===== */
@@ -156,12 +147,12 @@ body {
 }
 
 /* ===== SCROLLBAR ===== */
-::-webkit-scrollbar { width: 6px; }
+::-webkit-scrollbar { width: 8px; }
 ::-webkit-scrollbar-track { background: var(--color-cream); }
 ::-webkit-scrollbar-thumb {
   background: var(--color-navy);
-  border-radius: 3px;
-  opacity: 0.4;
+  border-radius: 4px;
+  opacity: 0.5;
 }
 
 /* ===== FOCUS VISIBLE ===== */
