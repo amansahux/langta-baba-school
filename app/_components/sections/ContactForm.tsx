@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import { Phone, Send, RefreshCw, CheckCircle2, AlertCircle } from "lucide-react";
 
 interface FormState {
   parent_name: string;
@@ -131,7 +132,7 @@ export default function ContactForm() {
             </label>
             <div className="relative">
               <span className="absolute inset-y-0 left-0 pl-3.5 flex items-center pointer-events-none text-[#4D515C]">
-                <span className="material-symbols-outlined !text-[18px]">call</span>
+                <Phone className="w-4 h-4" />
               </span>
               <input
                 type="tel"
@@ -256,13 +257,9 @@ export default function ContactForm() {
           >
             <span>{submitting ? "Sending Inquiry..." : "Send Inquiry"}</span>
             {submitting ? (
-              <span className="material-symbols-outlined !text-[20px] animate-spin">
-                sync
-              </span>
+              <RefreshCw className="w-4 h-4 animate-spin" />
             ) : (
-              <span className="material-symbols-outlined !text-[20px]">
-                send
-              </span>
+              <Send className="w-4 h-4" />
             )}
           </button>
         </div>
@@ -270,9 +267,7 @@ export default function ContactForm() {
         {/* Success Confirmation */}
         {submitted && (
           <div className="p-4 rounded-2xl bg-emerald-50 border border-emerald-300 text-emerald-900 flex items-start gap-3">
-            <span className="material-symbols-outlined !text-[22px] text-emerald-600 shrink-0 mt-0.5">
-              check_circle
-            </span>
+            <CheckCircle2 className="w-5 h-5 text-emerald-600 shrink-0 mt-0.5" />
             <div>
               <h5 className="font-[family-name:var(--font-display)] font-bold text-sm">
                 Inquiry Sent Successfully!
@@ -287,9 +282,7 @@ export default function ContactForm() {
         {/* Error Feedback */}
         {serverError && (
           <div className="p-4 rounded-2xl bg-red-50 border border-red-300 text-red-900 flex items-center gap-3">
-            <span className="material-symbols-outlined !text-[22px] text-red-600 shrink-0">
-              error
-            </span>
+            <AlertCircle className="w-5 h-5 text-red-600 shrink-0" />
             <p className="font-[family-name:var(--font-body)] text-xs text-red-800">
               Please complete all required fields correctly before submitting.
             </p>

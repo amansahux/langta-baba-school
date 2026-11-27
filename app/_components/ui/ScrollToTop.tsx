@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect, useState } from "react";
+import { ArrowUp } from "lucide-react";
 
 export default function ScrollToTop() {
   const [visible, setVisible] = useState(false);
@@ -31,7 +32,7 @@ export default function ScrollToTop() {
         ${visible ? "opacity-100 translate-y-0 pointer-events-auto" : "opacity-0 translate-y-4 pointer-events-none"}
       `}
     >
-      <span className="material-symbols-outlined !text-[20px]">arrow_upward</span>
+      <ArrowUp className="w-5 h-5" />
     </button>
   );
 }
