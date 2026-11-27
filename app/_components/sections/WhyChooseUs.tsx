@@ -64,7 +64,7 @@ const BENTO_CARDS: BentoCardData[] = [
     variant: "white",
     title: "Affordable Education",
     description:
-      "Making high-quality schooling accessible and realistic for families in Kharagdih and the surrounding rural community.",
+      "Making high-quality schooling accessible and realistic for families in Kharagdiha and the surrounding rural community.",
     icon: Handshake,
     footerText: "Community-Centric Access",
     footerIcon: Globe,
