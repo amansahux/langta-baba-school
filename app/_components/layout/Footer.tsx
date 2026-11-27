@@ -1,5 +1,14 @@
 import Image from "next/image";
 import Link from "next/link";
+import {
+  ShieldCheck,
+  ChevronRight,
+  MapPin,
+  Phone,
+  Mail,
+  Clock,
+  ArrowUp,
+} from "lucide-react";
 
 const QUICK_LINKS = [
   { label: "Home", href: "#hero" },
@@ -34,19 +43,15 @@ export default function Footer() {
                   Langta Baba Gyandeep Public School
                 </h3>
                 <p className="text-[#F6CF45] text-xs font-semibold tracking-wide">
-                  Kharagdiha • Established 2013
+                  Kharagdih • Established 2013
                 </p>
               </div>
             </div>
             <p className="font-[family-name:var(--font-body)] text-sm text-white/80 leading-relaxed max-w-sm">
-              Nurturing knowledge, integrity, and lifelong learning for students
-              from Classes 1 to 10 in Kharagdiha. Dedicated to wholesome
-              character and community development.
+              Nurturing knowledge, integrity, and lifelong learning for students from Classes 1 to 10 in Kharagdih. Dedicated to wholesome character and community development.
             </p>
             <div className="pt-2 flex items-center gap-2 text-xs text-white/70">
-              <span className="material-symbols-outlined text-[#F6CF45] !text-[18px]">
-                verified
-              </span>
+              <ShieldCheck className="w-4 h-4 text-[#F6CF45]" />
               <span>Recognized Community Educational Institution</span>
             </div>
           </div>
@@ -63,9 +68,7 @@ export default function Footer() {
                     href={href}
                     className="hover:text-[#F6CF45] transition-colors flex items-center gap-1.5"
                   >
-                    <span className="material-symbols-outlined !text-[14px] text-[#F6CF45]">
-                      chevron_right
-                    </span>
+                    <ChevronRight className="w-3.5 h-3.5 text-[#F6CF45]" />
                     <span>{label}</span>
                   </a>
                 </li>
@@ -80,21 +83,15 @@ export default function Footer() {
             </h4>
             <ul className="space-y-3 text-sm text-white/80 font-[family-name:var(--font-body)]">
               <li className="flex items-start gap-2.5">
-                <span className="material-symbols-outlined text-[#F6CF45] !text-[20px] shrink-0 mt-0.5">
-                  location_on
-                </span>
-                <span>Kharagdiha, Giridih District, Jharkhand, India</span>
+                <MapPin className="w-4 h-4 text-[#F6CF45] shrink-0 mt-0.5" />
+                <span>Kharagdih, Giridih District, Jharkhand, India</span>
               </li>
               <li className="flex items-center gap-2.5">
-                <span className="material-symbols-outlined text-[#F6CF45] !text-[20px] shrink-0">
-                  call
-                </span>
+                <Phone className="w-4 h-4 text-[#F6CF45] shrink-0" />
                 <span>+91 [School Contact Number Placeholder]</span>
               </li>
               <li className="flex items-center gap-2.5">
-                <span className="material-symbols-outlined text-[#F6CF45] !text-[20px] shrink-0">
-                  mail
-                </span>
+                <Mail className="w-4 h-4 text-[#F6CF45] shrink-0" />
                 <a
                   href="mailto:contact@langtababa-gyandeep.org"
                   className="hover:text-[#F6CF45] transition-colors break-all"
@@ -103,9 +100,7 @@ export default function Footer() {
                 </a>
               </li>
               <li className="flex items-center gap-2.5">
-                <span className="material-symbols-outlined text-[#F6CF45] !text-[20px] shrink-0">
-                  schedule
-                </span>
+                <Clock className="w-4 h-4 text-[#F6CF45] shrink-0" />
                 <span>Mon – Sat: 08:00 AM – 02:30 PM</span>
               </li>
             </ul>
@@ -115,22 +110,16 @@ export default function Footer() {
         {/* ── Bottom Bar with Back to Top ── */}
         <div className="pt-8 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-white/70 font-[family-name:var(--font-body)]">
           <div>
-            © 2013–2026{" "}
-            <span className="text-white font-medium">
-              Langta Baba Gyandeep Public School
-            </span>
-            . All rights reserved.
+            © 2013–2026 <span className="text-white font-medium">Langta Baba Gyandeep Public School</span>. All rights reserved.
           </div>
           <div className="flex items-center gap-4">
-            <span>Kharagdiha • Classes 1–10</span>
+            <span>Kharagdih • Classes 1–10</span>
             <Link
               href="#hero"
               className="inline-flex items-center gap-1.5 px-3.5 py-1.5 rounded-full bg-white/10 hover:bg-[#F6CF45] hover:text-[#17265B] text-white text-xs font-bold transition-all"
             >
               <span>Back to top</span>
-              <span className="material-symbols-outlined !text-[16px]">
-                arrow_upward
-              </span>
+              <ArrowUp className="w-3.5 h-3.5" />
             </Link>
           </div>
         </div>

@@ -2,6 +2,7 @@
 
 import Image from "next/image";
 import { useEffect, useState, useCallback } from "react";
+import { ArrowRight, Menu, X } from "lucide-react";
 
 const NAV_LINKS = [
   { label: "Home", href: "#hero" },
@@ -41,7 +42,7 @@ export default function Navbar() {
         ([entry]) => {
           if (entry.isIntersecting) setActiveHash(`#${id}`);
         },
-        { rootMargin: "-30% 0px -60% 0px" },
+        { rootMargin: "-30% 0px -60% 0px" }
       );
       obs.observe(el);
       observers.push(obs);
@@ -97,7 +98,7 @@ export default function Navbar() {
                 Langta Baba Gyandeep Public School
               </span>
               <span className="font-[family-name:var(--font-body)] text-[#4D515C] text-xs font-medium tracking-wide">
-                Kharagdiha | Est. 2013 • Classes 1–10
+                Kharagdih | Est. 2013 • Classes 1–10
               </span>
             </div>
           </a>
@@ -142,9 +143,7 @@ export default function Navbar() {
               "
             >
               <span>Contact Us</span>
-              <span className="material-symbols-outlined !text-[16px]">
-                arrow_forward
-              </span>
+              <ArrowRight className="w-4 h-4" />
             </a>
 
             {/* Hamburger — mobile only */}
@@ -158,9 +157,7 @@ export default function Navbar() {
                 text-[#17265B] hover:bg-[#F6CF45]/20 focus:outline-none focus:ring-2 focus:ring-[#17265B]
               "
             >
-              <span className="material-symbols-outlined !text-[26px]">
-                {drawerOpen ? "close" : "menu"}
-              </span>
+              {drawerOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
             </button>
           </div>
         </div>
@@ -203,7 +200,7 @@ export default function Navbar() {
                 onClick={closeDrawer}
                 className={`
                   block px-4 py-2.5 rounded-xl text-sm font-semibold
-                  font-[family-name:var(--font-display)] transition-colors
+                  font-[family-name:var(--font-display)] transition-colors whitespace-nowrap
                   ${
                     isActive
                       ? "bg-[#17265B] text-white"
@@ -224,13 +221,12 @@ export default function Navbar() {
               className="
                 flex items-center justify-center gap-2 w-full py-3
                 bg-[#F6CF45] text-[#17265B] font-[family-name:var(--font-display)]
-                text-sm font-bold rounded-xl shadow-sm hover:bg-amber-400 transition-colors
+                text-sm font-bold rounded-xl shadow-sm hover:bg-amber-400 transition-colors 
+                whitespace-nowrap
               "
             >
               <span>Contact Us Today</span>
-              <span className="material-symbols-outlined !text-[18px]">
-                arrow_forward
-              </span>
+              <ArrowRight className="w-4 h-4" />
             </a>
           </div>
         </nav>
