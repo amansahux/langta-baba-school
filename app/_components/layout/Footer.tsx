@@ -43,12 +43,14 @@ export default function Footer() {
                   Langta Baba Gyandeep Public School
                 </h3>
                 <p className="text-[#F6CF45] text-xs font-semibold tracking-wide">
-                  Kharagdih • Established 2013
+                  Kharagdiha • Established 2013
                 </p>
               </div>
             </div>
             <p className="font-[family-name:var(--font-body)] text-sm text-white/80 leading-relaxed max-w-sm">
-              Nurturing knowledge, integrity, and lifelong learning for students from Classes 1 to 10 in Kharagdih. Dedicated to wholesome character and community development.
+              Nurturing knowledge, integrity, and lifelong learning for students
+              from Classes 1 to 10 in Kharagdiha. Dedicated to wholesome
+              character and community development.
             </p>
             <div className="pt-2 flex items-center gap-2 text-xs text-white/70">
               <ShieldCheck className="w-4 h-4 text-[#F6CF45]" />
@@ -84,7 +86,7 @@ export default function Footer() {
             <ul className="space-y-3 text-sm text-white/80 font-[family-name:var(--font-body)]">
               <li className="flex items-start gap-2.5">
                 <MapPin className="w-4 h-4 text-[#F6CF45] shrink-0 mt-0.5" />
-                <span>Kharagdih, Giridih District, Jharkhand, India</span>
+                <span>Kharagdiha, Giridih District, Jharkhand, India</span>
               </li>
               <li className="flex items-center gap-2.5">
                 <Phone className="w-4 h-4 text-[#F6CF45] shrink-0" />
@@ -110,10 +112,14 @@ export default function Footer() {
         {/* ── Bottom Bar with Back to Top ── */}
         <div className="pt-8 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-white/70 font-[family-name:var(--font-body)]">
           <div>
-            © 2013–2026 <span className="text-white font-medium">Langta Baba Gyandeep Public School</span>. All rights reserved.
+            © 2013–2026{" "}
+            <span className="text-white font-medium">
+              Langta Baba Gyandeep Public School
+            </span>
+            . All rights reserved.
           </div>
           <div className="flex items-center gap-4">
-            <span>Kharagdih • Classes 1–10</span>
+            <span>Kharagdiha • Classes 1–10</span>
             <Link
               href="#hero"
               className="inline-flex items-center gap-1.5 px-3.5 py-1.5 rounded-full bg-white/10 hover:bg-[#F6CF45] hover:text-[#17265B] text-white text-xs font-bold transition-all"

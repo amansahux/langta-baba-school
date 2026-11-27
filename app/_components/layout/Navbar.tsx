@@ -42,7 +42,7 @@ export default function Navbar() {
         ([entry]) => {
           if (entry.isIntersecting) setActiveHash(`#${id}`);
         },
-        { rootMargin: "-30% 0px -60% 0px" }
+        { rootMargin: "-30% 0px -60% 0px" },
       );
       obs.observe(el);
       observers.push(obs);
@@ -94,11 +94,11 @@ export default function Navbar() {
               priority
             />
             <div className="flex flex-col">
-              <span className="font-[family-name:var(--font-display)] font-extrabold text-[#17265B] text-base sm:text-lg tracking-tight leading-tight group-hover:text-[#862D48] transition-colors">
+              <span className="font-[family-name:var(--font-display)] font-extrabold text-[#17265B] text-[12px] sm:text-lg tracking-tight leading-tight group-hover:text-[#862D48] transition-colors">
                 Langta Baba Gyandeep Public School
               </span>
-              <span className="font-[family-name:var(--font-body)] text-[#4D515C] text-xs font-medium tracking-wide">
-                Kharagdih | Est. 2013 • Classes 1–10
+              <span className="font-[family-name:var(--font-body)] text-[#4D515C] text-[8px] font-medium tracking-wide">
+                Kharagdiha | Est. 2013 • Classes 1–10
               </span>
             </div>
           </a>
@@ -157,7 +157,11 @@ export default function Navbar() {
                 text-[#17265B] hover:bg-[#F6CF45]/20 focus:outline-none focus:ring-2 focus:ring-[#17265B]
               "
             >
-              {drawerOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
+              {drawerOpen ? (
+                <X className="w-6 h-6" />
+              ) : (
+                <Menu className="w-6 h-6" />
+              )}
             </button>
           </div>
         </div>
