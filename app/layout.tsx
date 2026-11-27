@@ -22,17 +22,17 @@ const inter = Inter({
 // ─── Metadata ──────────────────────────────────────────────────────────────
 export const metadata: Metadata = {
   title: {
-    default: "Langta Baba Gyandeep Public School — Kharagdih (Est. 2013)",
+    default: "Langta Baba Gyandeep Public School — Kharagdiha (Est. 2013)",
     template: "%s | Langta Baba Gyandeep Public School",
   },
   description:
-    "Langta Baba Gyandeep Public School in Kharagdih — nurturing young minds from Class 1 to 10 with dedicated teachers, strong values, and affordable quality education since 2013.",
+    "Langta Baba Gyandeep Public School in Kharagdiha — nurturing young minds from Class 1 to 10 with dedicated teachers, strong values, and affordable quality education since 2013.",
   keywords: [
     "Langta Baba Gyandeep Public School",
-    "Kharagdih school",
+    "Kharagdiha school",
     "Giridih Jharkhand school",
-    "primary school Kharagdih",
-    "secondary school Kharagdih",
+    "primary school Kharagdiha",
+    "secondary school Kharagdiha",
     "affordable education",
     "Classes 1 to 10",
   ],
@@ -43,9 +43,9 @@ export const metadata: Metadata = {
     locale: "en_IN",
     url: "https://langtababaschool.in",
     siteName: "Langta Baba Gyandeep Public School",
-    title: "Langta Baba Gyandeep Public School — Kharagdih (Est. 2013)",
+    title: "Langta Baba Gyandeep Public School — Kharagdiha (Est. 2013)",
     description:
-      "Building Knowledge, Character & A Brighter Future. Serving Kharagdih families with value-driven education since 2013.",
+      "Building Knowledge, Character & A Brighter Future. Serving Kharagdiha families with value-driven education since 2013.",
     images: [
       {
         url: "https://lh3.googleusercontent.com/aida/ALJJyrCGNAZWbSI-KGGbhIkW1zTbGdqKZ8PqnsUJXWri4PEXbqasB1IOgGGSAoBmJya9XPUE2nZpEhjZ436znuhZ48OK7FbPAt11SKwmjtnb_v5AOoDbCHe_4GYHD6oYjeyq9ahjj_myYjzop_Y6Jw2cpqrM_zsgd3oAM_MuJrhQWrFga0TTEVTj0t0ZIH2Dq5IkSOnoljHoOpdScyselmZwHH_gG9MeDQ8hsR1Fx7Y0HjBoW0SYjJvqfa43HOGrzriXEJgRQPGT33Jfhg",
@@ -58,7 +58,8 @@ export const metadata: Metadata = {
   twitter: {
     card: "summary_large_image",
     title: "Langta Baba Gyandeep Public School",
-    description: "Building Knowledge, Character & A Brighter Future. Kharagdih (Est. 2013).",
+    description:
+      "Building Knowledge, Character & A Brighter Future. Kharagdiha (Est. 2013).",
     images: [
       "https://lh3.googleusercontent.com/aida/ALJJyrCGNAZWbSI-KGGbhIkW1zTbGdqKZ8PqnsUJXWri4PEXbqasB1IOgGGSAoBmJya9XPUE2nZpEhjZ436znuhZ48OK7FbPAt11SKwmjtnb_v5AOoDbCHe_4GYHD6oYjeyq9ahjj_myYjzop_Y6Jw2cpqrM_zsgd3oAM_MuJrhQWrFga0TTEVTj0t0ZIH2Dq5IkSOnoljHoOpdScyselmZwHH_gG9MeDQ8hsR1Fx7Y0HjBoW0SYjJvqfa43HOGrzriXEJgRQPGT33Jfhg",
     ],
