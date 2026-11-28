@@ -94,6 +94,7 @@ export default function RootLayout({
     <html
       lang="en"
       className={`${plusJakartaSans.variable} ${inter.variable} scroll-smooth`}
+      suppressHydrationWarning={true}
     >
       <body className="bg-[#F8F6EF] text-[#252A35] antialiased min-h-screen">
         {children}
