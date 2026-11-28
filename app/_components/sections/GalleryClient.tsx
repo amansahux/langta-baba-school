@@ -2,6 +2,7 @@
 
 import Image from "next/image";
 import { useState, useTransition } from "react";
+import { ZoomIn, X } from "lucide-react";
 
 export interface GalleryItem {
   id: string;
@@ -137,8 +138,8 @@ export default function GalleryClient() {
               <h4 className="font-[family-name:var(--font-display)] font-bold text-lg text-white">
                 {item.title}
               </h4>
-              <span className="mt-2 inline-flex items-center gap-1 text-xs text-white/80">
-                <span className="material-symbols-outlined !text-[16px]">zoom_in</span>
+              <span className="mt-2 inline-flex items-center gap-1.5 text-xs text-white/80">
+                <ZoomIn className="w-4 h-4" />
                 Click to inspect
               </span>
             </div>
@@ -164,7 +165,7 @@ export default function GalleryClient() {
               className="absolute top-4 right-4 z-10 w-10 h-10 rounded-full bg-[#F8F6EF] text-[#17265B] hover:bg-[#F6CF45] flex items-center justify-center shadow-md transition-colors"
               aria-label="Close lightbox"
             >
-              <span className="material-symbols-outlined !text-[20px]">close</span>
+              <X className="w-5 h-5" />
             </button>
             <div className="max-h-[70vh] bg-black flex items-center justify-center relative h-[60vh] sm:h-[68vh]">
               <Image
