@@ -94,10 +94,10 @@ export default function Navbar() {
               priority
             />
             <div className="flex flex-col">
-              <span className="font-[family-name:var(--font-display)] font-extrabold text-[#17265B] text-[12px] sm:text-lg tracking-tight leading-tight group-hover:text-[#862D48] transition-colors">
+              <span className="font-[family-name:var(--font-display)] font-extrabold text-[#17265B] text-[13px] sm:text-lg tracking-tight leading-tight group-hover:text-[#862D48] transition-colors">
                 Langta Baba Gyandeep Public School
               </span>
-              <span className="font-[family-name:var(--font-body)] text-[#4D515C] text-[8px] font-medium tracking-wide">
+              <span className="font-[family-name:var(--font-body)] text-[#4D515C] text-[10px] sm:text-xs font-medium tracking-wide">
                 Kharagdiha | Est. 2013 • Classes 1–10
               </span>
             </div>
@@ -158,9 +158,9 @@ export default function Navbar() {
               "
             >
               {drawerOpen ? (
-                <X className="w-6 h-6" />
+                <X className="w-6 h-6 cursor-pointer" />
               ) : (
-                <Menu className="w-6 h-6" />
+                <Menu className="w-6 h-6 cursor-pointer" />
               )}
             </button>
           </div>

@@ -22,6 +22,7 @@ export default function ScrollToTop() {
       aria-label="Scroll to top"
       className={`
         fixed bottom-8 right-8 z-50
+        cursor-pointer
         w-12 h-12 rounded-full
         bg-[#17265B] text-[#F6CF45]
         flex items-center justify-center
