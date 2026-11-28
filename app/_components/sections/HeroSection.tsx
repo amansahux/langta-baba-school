@@ -1,5 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
+import { ArrowDown, Phone, GraduationCap, History, MapPin } from "lucide-react";
 
 export default function HeroSection() {
   return (
@@ -19,7 +20,7 @@ export default function HeroSection() {
           sizes="100vw"
         />
         {/* Left-to-right cream fade (main readability layer) */}
-        <div className="absolute inset-0 bg-gradient-to-r from-[#F8F6EF] via-[#F8F6EF]/95 to-[#F8F6EF]/70" />
+        <div className="absolute inset-0 bg-gradient-to-r from-[#f8f6efe1] via-[#F8F6EF]/95 to-[#F8F6EF]/70" />
         {/* Bottom vignette */}
         <div className="absolute inset-0 bg-gradient-to-t from-[#F8F6EF] via-transparent to-transparent" />
       </div>
@@ -51,7 +52,7 @@ export default function HeroSection() {
           {/* H1 */}
           <h1 className="font-[family-name:var(--font-display)] font-extrabold text-[#17265B] text-[32px] leading-[1.15] sm:text-[42px] lg:text-[56px] lg:leading-[1.1] mb-6">
             Building Knowledge,{" "}
-            <span className="highlight-yellow">Character</span> & A Brighter
+            <span className="highlight-yellow">Character</span> &amp; A Brighter
             Future.
           </h1>
 
@@ -69,18 +70,14 @@ export default function HeroSection() {
               className="inline-flex items-center gap-2 bg-[#17265B] text-white font-[family-name:var(--font-display)] font-semibold text-sm sm:text-base px-6 py-3.5 rounded-full shadow-lg hover:bg-[#1e3278] hover:shadow-xl active:scale-95 transition-all duration-200 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#17265B] focus-visible:ring-offset-2"
             >
               <span>Explore Our School</span>
-              <span className="material-symbols-outlined text-[20px]">
-                arrow_downward
-              </span>
+              <ArrowDown className="w-5 h-5" />
             </Link>
             <Link
               href="#contact"
               className="inline-flex items-center gap-2 bg-[#F6CF45] text-[#17265B] font-[family-name:var(--font-display)] font-semibold text-sm sm:text-base px-6 py-3.5 rounded-full shadow-md hover:bg-[#f0c932] hover:shadow-lg active:scale-95 transition-all duration-200 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#F6CF45] focus-visible:ring-offset-2"
             >
               <span>Contact the School</span>
-              <span className="material-symbols-outlined text-[20px]">
-                call
-              </span>
+              <Phone className="w-5 h-5" />
             </Link>
           </div>
 
@@ -88,10 +85,8 @@ export default function HeroSection() {
           <div className="border-t border-[#E2DFC8] pt-7 flex flex-wrap gap-5 sm:gap-8">
             {/* Educational Span */}
             <div className="flex items-center gap-3">
-              <span className="flex-shrink-0 w-10 h-10 rounded-xl bg-[#F6CF45]/25 flex items-center justify-center">
-                <span className="material-symbols-outlined text-[20px] text-[#17265B]">
-                  school
-                </span>
+              <span className="flex-shrink-0 w-10 h-10 rounded-xl bg-[#F6CF45]/25 flex items-center justify-center text-[#17265B]">
+                <GraduationCap className="w-5 h-5" />
               </span>
               <div>
                 <p className="font-[family-name:var(--font-display)] font-bold text-sm text-[#17265B] leading-tight">
@@ -105,10 +100,8 @@ export default function HeroSection() {
 
             {/* Foundation */}
             <div className="flex items-center gap-3">
-              <span className="flex-shrink-0 w-10 h-10 rounded-xl bg-[#17265B]/10 flex items-center justify-center">
-                <span className="material-symbols-outlined text-[20px] text-[#17265B]">
-                  history_edu
-                </span>
+              <span className="flex-shrink-0 w-10 h-10 rounded-xl bg-[#17265B]/10 flex items-center justify-center text-[#17265B]">
+                <History className="w-5 h-5" />
               </span>
               <div>
                 <p className="font-[family-name:var(--font-display)] font-bold text-sm text-[#17265B] leading-tight">
@@ -122,10 +115,8 @@ export default function HeroSection() {
 
             {/* Location */}
             <div className="flex items-center gap-3">
-              <span className="flex-shrink-0 w-10 h-10 rounded-xl bg-[#862D48]/10 flex items-center justify-center">
-                <span className="material-symbols-outlined text-[20px] text-[#862D48]">
-                  location_on
-                </span>
+              <span className="flex-shrink-0 w-10 h-10 rounded-xl bg-[#862D48]/10 flex items-center justify-center text-[#862D48]">
+                <MapPin className="w-5 h-5" />
               </span>
               <div>
                 <p className="font-[family-name:var(--font-display)] font-bold text-sm text-[#17265B] leading-tight">
