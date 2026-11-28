@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { CheckCircle2, ArrowRight } from "lucide-react";
 import SectionLabel from "../ui/SectionLabel";
 
 const PROGRAMS = [
@@ -8,7 +9,8 @@ const PROGRAMS = [
     tagBg: "bg-[#F6CF45] text-[#17265B]",
     classes: "Classes 1–5",
     title: "Primary Education",
-    quote: '"Building strong foundations through essential concepts, curiosity, and interactive learning."',
+    quote:
+      '"Building strong foundations through essential concepts, curiosity, and interactive learning."',
     points: [
       "Language literacy & arithmetic fundamentals",
       "Joyful habit formation & discipline",
@@ -27,7 +29,8 @@ const PROGRAMS = [
     tagBg: "bg-[#17265B] text-white",
     classes: "Classes 6–8",
     title: "Middle School",
-    quote: '"Developing deeper understanding, independent thinking, and subject knowledge."',
+    quote:
+      '"Developing deeper understanding, independent thinking, and subject knowledge."',
     points: [
       "Structured science, mathematics & social sciences",
       "Practical computer lab exposure",
@@ -46,7 +49,8 @@ const PROGRAMS = [
     tagBg: "bg-[#F6CF45] text-[#17265B]",
     classes: "Classes 9–10",
     title: "Secondary Education",
-    quote: '"Strengthening academic knowledge, problem-solving, and preparation for important academic milestones."',
+    quote:
+      '"Strengthening academic knowledge, problem-solving, and preparation for important academic milestones."',
     points: [
       "Rigorous conceptual exam preparation",
       "Regular assessment & personalized mentoring",
@@ -87,44 +91,54 @@ export default function AcademicsSection() {
             >
               <div>
                 <div className="flex items-baseline justify-between mb-6">
-                  <span className={`font-[family-name:var(--font-display)] text-4xl sm:text-5xl font-extrabold ${prog.numberColor}`}>
+                  <span
+                    className={`font-[family-name:var(--font-display)] text-4xl sm:text-5xl font-extrabold ${prog.numberColor}`}
+                  >
                     {prog.step}
                   </span>
-                  <span className={`px-3.5 py-1 ${prog.tagBg} font-[family-name:var(--font-display)] text-xs font-bold rounded-full`}>
+                  <span
+                    className={`px-3.5 py-1 ${prog.tagBg} font-[family-name:var(--font-display)] text-xs font-bold rounded-full`}
+                  >
                     {prog.tag}
                   </span>
                 </div>
 
-                <div className={`font-[family-name:var(--font-display)] font-extrabold text-2xl sm:text-3xl tracking-tight mb-1 ${prog.step === "03" ? "text-[#F6CF45]" : "text-[#17265B]"}`}>
+                <div
+                  className={`font-[family-name:var(--font-display)] font-extrabold text-2xl sm:text-3xl tracking-tight mb-1 ${prog.step === "03" ? "text-[#F6CF45]" : "text-[#17265B]"}`}
+                >
                   {prog.classes}
                 </div>
-                <h3 className={`font-[family-name:var(--font-display)] font-bold text-lg mb-4 ${prog.titleColor}`}>
+                <h3
+                  className={`font-[family-name:var(--font-display)] font-bold text-lg mb-4 ${prog.titleColor}`}
+                >
                   {prog.title}
                 </h3>
 
-                <p className={`font-[family-name:var(--font-body)] text-sm leading-relaxed mb-6 italic ${prog.textColor}`}>
+                <p
+                  className={`font-[family-name:var(--font-body)] text-sm leading-relaxed mb-6 italic ${prog.textColor}`}
+                >
                   {prog.quote}
                 </p>
 
                 <ul className={`space-y-3 text-sm ${prog.textColor}`}>
                   {prog.points.map((pt, idx) => (
                     <li key={idx} className="flex items-start gap-2.5">
-                      <span className="material-symbols-outlined text-[#F6CF45] !text-[20px] shrink-0 mt-0.5" aria-hidden="true">
-                        check_circle
-                      </span>
+                      <CheckCircle2 className="w-5 h-5 text-[#F6CF45] shrink-0 mt-0.5" />
                       <span>{pt}</span>
                     </li>
                   ))}
                 </ul>
               </div>
 
-              <div className={`mt-8 pt-6 border-t ${prog.step === "03" ? "border-white/20" : "border-[#E2DFC8]"}`}>
+              <div
+                className={`mt-8 pt-6 border-t ${prog.step === "03" ? "border-white/20" : "border-[#E2DFC8]"}`}
+              >
                 <Link
                   href="#contact"
                   className={`inline-flex items-center gap-1.5 font-[family-name:var(--font-display)] font-bold text-sm transition-colors ${prog.linkColor}`}
                 >
                   <span>{prog.inquireText}</span>
-                  <span className="material-symbols-outlined !text-[18px]">arrow_forward</span>
+                  <ArrowRight className="w-4 h-4" />
                 </Link>
               </div>
             </div>

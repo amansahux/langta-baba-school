@@ -1,3 +1,4 @@
+import { MapPin, Phone, Mail, Clock, ArrowRight, Map } from "lucide-react";
 import SectionLabel from "../ui/SectionLabel";
 import ContactForm from "./ContactForm";
 
@@ -30,12 +31,7 @@ export default function ContactSection() {
               {/* School Address */}
               <div className="flex items-start gap-4 p-5 rounded-2xl bg-[#F8F6EF] border border-[#E2DFC8]">
                 <div className="w-12 h-12 rounded-xl bg-[#F6CF45] text-[#17265B] flex items-center justify-center shrink-0">
-                  <span
-                    className="material-symbols-outlined text-2xl"
-                    aria-hidden="true"
-                  >
-                    location_on
-                  </span>
+                  <MapPin className="w-6 h-6" />
                 </div>
                 <div>
                   <h3 className="font-[family-name:var(--font-display)] font-bold text-[#17265B] text-base">
@@ -51,12 +47,7 @@ export default function ContactSection() {
               {/* Phone Number */}
               <div className="flex items-start gap-4 p-5 rounded-2xl bg-[#F8F6EF] border border-[#E2DFC8]">
                 <div className="w-12 h-12 rounded-xl bg-[#17265B] text-white flex items-center justify-center shrink-0">
-                  <span
-                    className="material-symbols-outlined text-2xl"
-                    aria-hidden="true"
-                  >
-                    call
-                  </span>
+                  <Phone className="w-6 h-6" />
                 </div>
                 <div>
                   <h3 className="font-[family-name:var(--font-display)] font-bold text-[#17265B] text-base">
@@ -67,12 +58,10 @@ export default function ContactSection() {
                   </p>
                   <a
                     href="tel:+910000000000"
-                    className="inline-flex items-center gap-1 text-xs font-bold text-[#17265B] hover:text-[#862D48] mt-2 transition-colors"
+                    className="inline-flex items-center gap-1.5 text-xs font-bold text-[#17265B] hover:text-[#862D48] mt-2 transition-colors"
                   >
                     <span>Call Administration</span>
-                    <span className="material-symbols-outlined !text-[16px]">
-                      arrow_forward
-                    </span>
+                    <ArrowRight className="w-3.5 h-3.5" />
                   </a>
                 </div>
               </div>
@@ -80,12 +69,7 @@ export default function ContactSection() {
               {/* Email */}
               <div className="flex items-start gap-4 p-5 rounded-2xl bg-[#F8F6EF] border border-[#E2DFC8]">
                 <div className="w-12 h-12 rounded-xl bg-[#862D48] text-white flex items-center justify-center shrink-0">
-                  <span
-                    className="material-symbols-outlined text-2xl"
-                    aria-hidden="true"
-                  >
-                    mail
-                  </span>
+                  <Mail className="w-6 h-6" />
                 </div>
                 <div>
                   <h3 className="font-[family-name:var(--font-display)] font-bold text-[#17265B] text-base">
@@ -103,12 +87,7 @@ export default function ContactSection() {
               {/* Opening Hours */}
               <div className="flex items-start gap-4 p-5 rounded-2xl bg-[#F8F6EF] border border-[#E2DFC8]">
                 <div className="w-12 h-12 rounded-xl bg-white border border-[#17265B]/20 text-[#17265B] flex items-center justify-center shrink-0">
-                  <span
-                    className="material-symbols-outlined text-2xl"
-                    aria-hidden="true"
-                  >
-                    schedule
-                  </span>
+                  <Clock className="w-6 h-6" />
                 </div>
                 <div>
                   <h3 className="font-[family-name:var(--font-display)] font-bold text-[#17265B] text-base">
@@ -125,9 +104,7 @@ export default function ContactSection() {
             <div className="rounded-3xl overflow-hidden border border-[#E2DFC8] custom-shadow-card">
               <div className="p-3 bg-[#F8F6EF] border-b border-[#E2DFC8] flex items-center justify-between text-[#17265B]">
                 <span className="font-[family-name:var(--font-display)] text-xs font-bold flex items-center gap-1.5">
-                  <span className="material-symbols-outlined !text-[16px]">
-                    map
-                  </span>
+                  <Map className="w-4 h-4" />
                   Kharagdiha Campus Location
                 </span>
                 <span className="text-xs text-[#4D515C]">Interactive Map</span>
